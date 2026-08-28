@@ -4,7 +4,7 @@ public class Student {
     private int age;
     private int id;
 
-    public void student(String name, int age, int id) {
+    public Student(String name, int age, int id) {
         this.name = name;
         this.age = age;
         this.id = id;
