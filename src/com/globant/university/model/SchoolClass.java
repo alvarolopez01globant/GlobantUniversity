@@ -1,15 +1,17 @@
+package com.globant.university.model;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class Class {
-
+public class SchoolClass {
     private String name;
     private Teacher teacher;
     private List<Student> students;
 
-    public Class(String name, Teacher teacher, List<Student> students) {
+    public SchoolClass(String name, Teacher teacher) {
         this.name = name;
         this.teacher = teacher;
-        this.students = students;
+        this.students = new ArrayList<>();
     }
 
     public String getName() {
@@ -32,7 +34,7 @@ public class Class {
         return students;
     }
 
-    public void setStudents(List<Student> students) {
-        this.students = students;
+    public void addStudent(Student student) {
+        students.add(student);
     }
 }

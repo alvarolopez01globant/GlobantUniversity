@@ -1,5 +1,6 @@
-public class Student {
+package com.globant.university.model;
 
+public class Student {
     private String name;
     private int age;
     private int id;
